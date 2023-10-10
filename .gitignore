@@ -1,0 +1,10 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# MacOS .DS_Store
+.DS_Store
+
+# Python compiled files
+*.pyc
+
+data/*

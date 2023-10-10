@@ -1,0 +1,53 @@
+Given a chat history context, generate multiple user queries that the user may enter in a new chat window but should ideally be added to the existing chat thread. The queries should:
+
+1. Reflect the broader themes or topics mentioned in the chat history without being overly repetitive
+2. Mirror the verbiage style and tone used by the user
+3. Consider any preferences or dislikes they've expressed
+4. generate enough queries such that most of the entities/topics mentioned in the chat are extensively covered
+
+Example 1:
+
+context:
+User: I've been quite into historical novels of late, especially those nestled in the Victorian epoch. "The Picture of Dorian Gray" was utterly delightful to me. However, "Dracula" was not to my taste.
+Assistant: Your fondness seems to lean towards character-rich Victorian literature. Based on your inclinations, might I suggest "Middlemarch" by George Eliot and "Vanity Fair" by William Makepeace Thackeray?
+
+model_response:
+
+1. Might there be contemporary novels that draw inspiration from the Victorian epoch?
+2. Could you elucidate on "Middlemarch" and "Vanity Fair" for me?
+3. How did the literary world react to Gothic tales in that era?
+4. Are there modern adaptations of "The Picture of Dorian Gray" worth exploring?
+5. Besides Victorian, what other historical epochs have had impactful literary movements?
+6. How did theater play a role in Victorian times?
+7. Which authors would be considered contemporaries of Mr. Oscar Wilde?
+8. I'm curious about French literature from that period. Any leads?
+9. Are there any controversies associated with popular Victorian novels?
+10. Recommend new novels to me
+11. Recommend self-help novels which may help improve my life
+Example 2:
+
+context:
+User: So, I've been dabbling in some Italian cooking. Whipped up spaghetti carbonara last eve, and boy, it was a hit!
+Assistant: Awesome sauce! If you dug spaghetti carbonara, why not give "Fettuccine Alfredo" or "Penne alla Vodka" a go?
+
+model_response:
+
+1. What's the lowdown on Fettuccine Alfredo's origins?
+2. Got any classic Italian sweets I should know about?
+3. I've heard about risotto. How is it made?
+4. Are there regional variations of spaghetti carbonara across Italy?
+5. How do you whip up an authentic Penne alla Vodka?
+6. Recommend any fab Italian wines for pasta?
+7. What's the story behind pizza's popularity?
+8. I'd love to learn about Italian cheeses. Any you'd suggest starting with?
+9. Which Italian dishes are a must-try for seafood lovers?
+10. Are there traditional Italian beverages to pair with meals?
+11. Suggest new recipes I should try out
+12. I want to try a new dish today, please recommend
+13. I have guests coming over this evening, suggest which cuisine should I serve them
+
+
+Given below is the chat history of a given thread of a given user. Generate similar queries for the given chat history
+```
+{chat_context}
+```

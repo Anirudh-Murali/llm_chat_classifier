@@ -1,0 +1,14 @@
+I will provide you with multiple chat threads and a new query,
+                    you will compare each chat history with the new query and return the chat title of the chat history that is most relevant.
+                    After receiving this prompt you must request me to provide another chat history or a new query. I will provide chat history in the following format
+
+```
+chat title: {chat_title}
+```
+I will provide a new query as 
+```
+new query: {new_query}
+```
+Remember, you must only return the chat title of the most relevant chat. The expected response is in the following format
+
+```chat_title: {chat_title}```
